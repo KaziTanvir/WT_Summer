@@ -1,7 +1,6 @@
-<?php
-    session_start();
-    $_SESSION['text']="Login/Register";
-    
+<?php 
+	session_start();
+	if(isset($_SESSION['status'])){
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,9 +13,9 @@
 <body>
     <table width= "100%">
         <tr>
-            <td align="center">Special Service Provider</td>
-            <td ><a href="feedback.php">Feedback</a></td>
-            <td><a href="login.php"><?php echo $_SESSION["text"];?></a></td>
+            <td align="center"><a href="dashboard.php">Dashboard</a></td>
+            <td ><a href="service.php">All services</a></td>
+            <td><a href="../control/logout.php"><?php echo $_SESSION["text"];?></a></td>
         </tr>
         <tr>
             <td colspan="3">
@@ -125,3 +124,8 @@
     </table>
 </body>
 </html>
+<?php
+	}else{
+		echo "invalid request";
+	}
+?>

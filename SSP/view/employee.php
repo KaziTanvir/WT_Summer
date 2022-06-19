@@ -1,5 +1,9 @@
 <?php 
+    
 	session_start();
+   
+    include '../control/show-employee.php';
+
 	if(isset($_SESSION['status'])){
 ?>
 
@@ -11,6 +15,7 @@
     <title>Dashboard</title>
 </head>
 <body>
+    
     <table border="1">
         <tr>
             <td><a href="../view/home2.php"><img src="../images/logo.png" width="200px" alt=""></a></td>
@@ -20,7 +25,18 @@
         </tr>
         <tr>
             <td><a href="../view/personal-info.php">Personal information</a></td>
-            <td rowspan="6"></td>
+            <td rowspan="6">
+                <table>
+                    <tr>
+                        <td><a href="../view/registration-employee.php">Add Employee</a></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><a href="../view/employee_list.php">Show Employee</a></td>
+                    </tr>
+                    
+                </table>
+            </td>
         </tr>
         <tr>
             <td><a href="../view/employee.php">Employee information</a></td>
@@ -32,7 +48,7 @@
             <td><a href="../view/service-info.php">Service information</a></td>
         </tr>
         <tr>
-            <td><a href="../view/feedback-show.php">See Feedbacks</a></td>
+            <td><a href="../view/service.php">Service Provider information</a></td>
         </tr>
         <tr>
             <td><a href="../control/logout.php">Log Out</a></td>
@@ -40,6 +56,8 @@
 
 
     </table>
+
+    
 </body>
 </html>
 <?php

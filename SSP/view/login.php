@@ -1,15 +1,18 @@
-<?php
-    include "../control/login_check.php";
-    if(isset($_SESSION['username'])){
-        
-        }
+<?php 
+	
+    include '../control/login_check.php';
+	if(isset($_SESSION['status'])){
+        header("Location: dashboard.php");
+    }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Login</title>
 </head>
 <body>
+<a href="../view/home.php"><img src="../images/logo.png" width="200px" alt=""></a>
 <h2>Login</h2>
 
 <form action="" method="post">
@@ -24,6 +27,7 @@
         </tr>
         <tr>
             <td><input name="submit" type="submit" value="LOGIN"></td>
+            <td><a href="../view/registration-user.php">Don't have a account?</a></td>
         </tr>
     </table>
     

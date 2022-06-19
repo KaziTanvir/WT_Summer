@@ -15,10 +15,11 @@ $_SESSION["username"] = $_POST['username'];
 $_SESSION["password"] = $_POST['password'];
 $user = $_REQUEST["username"];
 $pass = $_REQUEST["password"];
-$existingdata = file_get_contents('../data/user.JSON');
+$existingdata = file_get_contents('../data/admin.JSON');
 $tempJSONdata = json_decode($existingdata);
     foreach($tempJSONdata as $data ){
-        if($data->username == $user && $data->password){
+        if($data->username == $user && $data->password==$pass){
+            $_SESSION['status'] = true;
             header("Location: ../view/dashboard.php");
             
             break;
