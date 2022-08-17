@@ -1,0 +1,25 @@
+[
+    {
+        "firstname": "Kazi",
+        "lastname": "Tanvir",
+        "age": "12",
+        "username": "kazi",
+        "gender": "Male",
+        "email": "test@gmail.com",
+        "password": "123456789",
+        "address": "xcvsdfgwsdfsd",
+        "File": "..\/uploads\/Screenshot_1.png"
+    },
+    {
+        "firstname": "test",
+        "lastname": "test",
+        "age": "123456789",
+        "username": "test",
+        "gender": "Male",
+        "email": "r@gmail.com",
+        "password": "123456789",
+        "address": "sdfsdfsd",
+        "File": "..\/uploads\/Screenshot_1.png"
+    }
+    
+]

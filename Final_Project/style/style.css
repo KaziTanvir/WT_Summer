@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navigation-bar{
+    width: 100%;
+    padding: 35px 0;
+    background-color: blue;
+}
+
+.ul{
+    font-size: 24px;
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.nav-li{
+    float: left;
+    padding-left: 300px;
+    padding-bottom: 5px;
+
+}
+li{
+    list-style: none;
+}
